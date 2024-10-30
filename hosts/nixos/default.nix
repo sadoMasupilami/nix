@@ -4,7 +4,7 @@ let user = "michaelklug";
     keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdS3YtldeyA67cQh5r3rAa3GHJEMXgs824PDA7zoUHa8FN4UPFN5L9ZCriq2IsXG6FJrYZfB31Fj9YyBfjt7lwcuOH8q4tYCG3li551HvOZrIv9a2zN6lKbSWYYPhGMQtBA7vOalHA/rDSYGiljIZe8hQNRuh6KtdCosfrufaOGmGH1Wl+tgpb0TUW6MdfMhcFmlLYvz06jdVgq/IskLcAwzy345sx3BkPWEg3xWF/GFd5eIUlsVDfwgvdCIli+q3Bis8rDfQH9VoCChitdKk9Dfo5+xUad1R1cSw5bJd8WzCPA2uVU1QTUz9ZpDMFqgrVRot1j1REpLNF4Jthh7MhCNNz+9tyCPmTlejxGpznRkINbTCrK5b4WNdt4XgwpP+O1t4b1RSJyDiysd9eeN2kDtiNIxstVzleE9AFRrxnKhKjcOJXBAVycpJLPSEepm9iwGI5ZR36mA2TZfeFRyKru2b6k1Wz4hpm77feAHYDtcRDHXwn3NSPryABFyUr73M=" ]; in
 {
   imports = [
-    ../../modules/nixos/disk-config.nix
+#    ../../modules/nixos/disk-config.nix
     ../../modules/shared
   ];
 
