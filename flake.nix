@@ -25,7 +25,7 @@
     };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs } @inputs:
     let
       user = "michaelklug";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -35,7 +35,7 @@
         default = with pkgs; mkShell {
           nativeBuildInputs = with pkgs; [ bashInteractive git ];
           shellHook = with pkgs; ''
-            export EDITOR=vim
+            export EDITOR=nano
           '';
         };
       };
@@ -101,7 +101,6 @@
         inherit system;
         specialArgs = inputs;
         modules = [
-          disko.nixosModules.disko
           home-manager.nixosModules.home-manager {
             home-manager = {
               useGlobalPkgs = true;

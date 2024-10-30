@@ -12,4 +12,7 @@ with pkgs; [
   jq
   tree
   zsh-powerlevel10k
+
+  eza
+  meslo-lgs-nf
 ]
