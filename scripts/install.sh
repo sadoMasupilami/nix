@@ -1,3 +1,7 @@
+set -e
+
+# git is needed in nixos-minimal
+nix-shell -p git
 # Replace /dev/sdX with your actual target disk
 DISK="/dev/nvme0n1"
 
@@ -24,9 +28,9 @@ mkfs.ext4 ${DISK}p2 -F
 
 # Format and enable swap
 mkswap -L SWAP ${DISK}p3
-swapon ${DISK}p3
 
-udevadm trigger
+# populate /dev/disk/by-label, not sure if needed
+#udevadm trigger
 
 mount ${DISK}p2 /mnt       # Mount root partition
 mkdir -p /mnt/boot
