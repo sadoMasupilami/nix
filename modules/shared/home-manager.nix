@@ -11,7 +11,6 @@ let name = "Michael Klug";
     autosuggestion.enable = true;
     history = {
       ignoreDups = true;
-      ignorePatterns = [ "pwd" ];
       ignoreSpace = false;
       save = 100000;
       share = false;
