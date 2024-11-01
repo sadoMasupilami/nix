@@ -7,7 +7,11 @@ let name = "Michael Klug";
   # Shared shell configuration
   zsh = {
     enable = true;
-    autocd = false;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    history.share = false;
+    syntaxHighlighting.enable = true;
+    autocd = true;
     plugins = [
       {
         name = "powerlevel10k";
@@ -27,40 +31,37 @@ let name = "Michael Klug";
         . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
       fi
 
-      # Define variables for directories
-      export PATH=$HOME/.pnpm-packages/bin:$HOME/.pnpm-packages:$PATH
-      export PATH=$HOME/.npm-packages/bin:$HOME/bin:$PATH
-      export PATH=$HOME/.local/share/bin:$PATH
-
       # Remove history data we don't want to see
-      export HISTIGNORE="pwd:ls:cd"
-
-      # Emacs is my editor
-      export ALTERNATE_EDITOR=""
-      export EDITOR="emacsclient -t"
-      export VISUAL="emacsclient -c -a emacs"
-
-      e() {
-          emacsclient -t "$@"
-      }
+      export HISTIGNORE="pwd:ls"
 
       # nix shortcuts
       shell() {
           nix-shell '<nixpkgs>' -A "$1"
       }
-
-      # Use difftastic, syntax-aware diffing
-      alias diff=difft
-
-      # Always color ls and group directories
-      alias -- h=helm
-      alias -- k=kubectl
-      alias -- l='ls -lah'
-      alias -- la='ls -lah -a'
-      alias -- ll='ls -lh'
-      alias -- ls='eza --icons --classify --group-directories-first'
-      alias -- t=terraform
+      # autocomplete short cuts
+      compdef  __start_kubectlk
+      compdef __start_helm h
+      compdef __start_terraform t
     '';
+    shellAliases = {
+      ls="eza --icons --classify --group-directories-first";
+      ll="ls -lh";
+      l="ls -lah";
+      la="ls -lah -a";
+      k="kubectl";
+      h="helm";
+      t="terraform";
+        };
+  };
+
+  fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
+  direnv = {
+    enable = true;
+    nix-direnv.enable = true;
   };
 
   git = {

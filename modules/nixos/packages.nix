@@ -3,9 +3,5 @@
 with pkgs;
 let shared-packages = import ../shared/packages.nix { inherit pkgs; }; in
 shared-packages ++ [
-
-  home-manager
-  direnv
-  unixtools.ifconfig
-  unixtools.netstat
+  tree
 ]

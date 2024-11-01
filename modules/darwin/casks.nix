@@ -1,26 +1,23 @@
 _:
 
 [
-  # Development Tools
-  "homebrew/cask/docker"
-  "visual-studio-code"
-
-  # Communication Tools
-  "discord"
-  "notion"
-  "slack"
+  "1password"
+  "roon"
+  "microsoft-office"
+  "microsoft-auto-update"
+  "microsoft-remote-desktop"
+  "microsoft-teams"
+  "devpod"
+  "jetbrains-toolbox"
+  "obs"
+  "sony-ps-remote-play"
+  "qobuz"
+  "rancher"
   "telegram"
-  "zoom"
-
-  # Utility Tools
-  "syncthing"
-
-  # Entertainment Tools
-  "vlc"
-
-  # Productivity Tools
-  "raycast"
-
-  # Browsers
+  "tidal"
+  "whatsapp"
+  "wifiman"
   "google-chrome"
+  "steam"
+  "doll"
 ]
