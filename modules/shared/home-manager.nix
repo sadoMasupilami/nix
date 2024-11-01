@@ -9,7 +9,14 @@ let name = "Michael Klug";
     enable = true;
     enableCompletion = true;
     autosuggestion.enable = true;
-    history.share = false;
+    history = {
+      ignoreDups = true;
+      ignorePatterns = [ "pwd" ];
+      ignoreSpace = false;
+      save = 100000;
+      share = false;
+      size = 100000;
+    };
     syntaxHighlighting.enable = true;
     autocd = true;
     plugins = [
@@ -33,9 +40,6 @@ let name = "Michael Klug";
 
       # fzf tab completion
       source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
-
-      # Remove history data we don't want to see
-      export HISTIGNORE="pwd:ls"
 
       # nix shortcuts
       shell() {
