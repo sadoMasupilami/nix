@@ -15,4 +15,8 @@ with pkgs; [
 
   eza
   meslo-lgs-nf
+
+  direnv
+  unixtools.ifconfig
+  unixtools.netstat
 ]

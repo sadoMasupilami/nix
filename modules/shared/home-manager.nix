@@ -79,8 +79,8 @@ let name = "Michael Klug";
     };
   };
 
-#  alacritty = {
-#    enable = true;
+  alacritty = {
+    enable = true;
 #    settings = {
 #      cursor = {
 #        style = "Block";
@@ -142,5 +142,5 @@ let name = "Michael Klug";
 #        };
 #      };
 #    };
-#  };
+  };
 }

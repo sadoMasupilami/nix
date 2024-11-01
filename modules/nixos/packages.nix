@@ -6,7 +6,6 @@ shared-packages ++ [
 
   home-manager
   direnv
-  tree
   unixtools.ifconfig
   unixtools.netstat
 ]

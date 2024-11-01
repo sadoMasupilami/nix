@@ -82,7 +82,7 @@ let user = "michaelklug";
       packages = with pkgs; [
             kdePackages.kate
       ];
-#      shell = pkgs.zsh;
+      shell = pkgs.zsh;
       openssh.authorizedKeys.keys = keys;
     };
 
