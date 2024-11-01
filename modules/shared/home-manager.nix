@@ -31,6 +31,9 @@ let name = "Michael Klug";
         . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
       fi
 
+      # fzf tab completion
+      source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
+
       # Remove history data we don't want to see
       export HISTIGNORE="pwd:ls"
 
