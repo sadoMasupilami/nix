@@ -92,6 +92,7 @@ let user = "michaelklug";
   };
 
   programs.firefox.enable = true;
+  programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
     gitAndTools.gitFull
