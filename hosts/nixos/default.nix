@@ -102,5 +102,5 @@ let user = "michaelklug";
   system.stateVersion = "21.05"; # Don't change this
 
   virtualisation.vmware.guest.enable = true;
-
+  virtualisation.vmware.guest.headless = false;
 }
