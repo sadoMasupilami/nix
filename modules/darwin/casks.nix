@@ -20,4 +20,5 @@ _:
   "google-chrome"
   "steam"
   "doll"
+  "calibre" # broken in nixpkgs
 ]
