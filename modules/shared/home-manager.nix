@@ -32,10 +32,6 @@ let name = "Michael Klug";
     ];
 
     initExtraFirst = ''
-      if [[ -f /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh ]]; then
-        . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-        . /nix/var/nix/profiles/default/etc/profile.d/nix.sh
-      fi
 
       # fzf tab completion
       source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
@@ -45,7 +41,7 @@ let name = "Michael Klug";
           nix-shell '<nixpkgs>' -A "$1"
       }
       # autocomplete short cuts
-      compdef  __start_kubectlk
+      compdef  __start_kubectl k
       compdef __start_helm h
       compdef __start_terraform t
     '';

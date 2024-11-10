@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Enable exit on error
 set -e
@@ -13,6 +13,7 @@ TARGET_DIR="$SCRIPT_DIR/flakes/home-manager/"
 cd "$TARGET_DIR"
 
 # Execute the home-manager command
+export NIXPKGS_ALLOW_UNFREE=1
 home-manager switch --impure --flake .#wsl
 
 echo "home-manager switch executed successfully."
