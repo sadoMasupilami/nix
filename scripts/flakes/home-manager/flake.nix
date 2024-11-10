@@ -20,7 +20,7 @@
       homeConfigurations = {
         wsl = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ../modules/nixos/home-manager.nix ];
+          modules = [ ../../../modules/nixos/home-manager.nix ];
         };
       };
     };
