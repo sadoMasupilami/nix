@@ -29,4 +29,5 @@ with pkgs; [
   zsh-powerlevel10k
   zsh-syntax-highlighting
   glab
+  firefox
 ]
