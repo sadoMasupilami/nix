@@ -28,4 +28,5 @@ with pkgs; [
   zsh-autosuggestions
   zsh-powerlevel10k
   zsh-syntax-highlighting
+  glab
 ]
