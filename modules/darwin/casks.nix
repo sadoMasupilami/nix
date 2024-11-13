@@ -21,4 +21,5 @@ _:
   "steam"
   "doll"
   "calibre" # broken in nixpkgs
+  "windows-app"
 ]
