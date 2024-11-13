@@ -44,6 +44,10 @@ let name = "Michael Klug";
       compdef  __start_kubectl k
       compdef __start_helm h
       compdef __start_terraform t
+
+      # ctrl + left/right for linux
+      bindkey "^[[1;5C" forward-word
+      bindkey "^[[1;5D" backward-word
     '';
     shellAliases = {
       ls="eza --icons --classify --group-directories-first";
