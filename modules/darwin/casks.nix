@@ -5,7 +5,6 @@ _:
   "roon"
   "microsoft-office"
   "microsoft-auto-update"
-  "microsoft-remote-desktop"
   "microsoft-teams"
   "devpod"
   "jetbrains-toolbox"
