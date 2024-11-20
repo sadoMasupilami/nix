@@ -1,0 +1,12 @@
+downloads.marketplace.jetbrains.com
+cache.nixos.org
+channels.nixos.org
+ftpmirror.gnu.org
+api.github.com
+github.com
+cloud.google.com
+proxy.golang.org
+gitlab.com
+registry.npmjs.org
+registry.yarnpkg.com
+yarn.npmjs.org
