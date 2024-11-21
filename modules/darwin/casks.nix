@@ -18,7 +18,6 @@ _:
   "wifiman"
   "google-chrome"
   "steam"
-  "doll"
   "calibre" # broken in nixpkgs
   "windows-app"
 ]
