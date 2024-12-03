@@ -20,4 +20,6 @@ _:
   "steam"
   "calibre" # broken in nixpkgs
   "windows-app"
+  "textsniper"
+  "chatgpt"
 ]
